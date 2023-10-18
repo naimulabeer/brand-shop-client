@@ -110,10 +110,10 @@ const AddProduct = () => {
               >
                 <option value="Nike">Nike</option>
                 <option value="Adidas">Adidas</option>
-                <option value="Adidas">Puma</option>
-                <option value="Adidas">New Balance</option>
-                <option value="Adidas">Reebok</option>
-                <option value="Adidas">Versace</option>
+                <option value="Puma">Puma</option>
+                <option value="New Balance">New Balance</option>
+                <option value="Reebok">Reebok</option>
+                <option value="Versace">Versace</option>
               </select>
             </div>
 
@@ -131,10 +131,10 @@ const AddProduct = () => {
               >
                 <option value="Footwear">Footwear</option>
                 <option value="Clothing">Clothing</option>
-                <option value="Clothing">Accessories</option>
-                <option value="Clothing">Athletic Gear</option>
-                <option value="Clothing">Socks</option>
-                <option value="Clothing">Workout</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Athletic Gear">Athletic Gear</option>
+                <option value="Socks">Socks</option>
+                <option value="Workout">Workout</option>
               </select>
             </div>
           </div>
