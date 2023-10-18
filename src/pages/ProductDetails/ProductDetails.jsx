@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Rating from "../../components/Rating/Rating";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -78,9 +78,12 @@ function ProductDetails() {
                 <button className="bg-violet-300 text-white rounded px-2 py-1 hover:bg-violet-600">
                   Details
                 </button>
-                <button className="bg-slate-700 text-white rounded px-2 py-1 hover:bg-slate-400 ml-4">
+                <Link
+                  to={`/productDetails/${product.brand}/${product._id}`}
+                  className="bg-slate-700 text-white rounded px-2 py-1 hover:bg-slate-400 ml-4"
+                >
                   Update
-                </button>
+                </Link>
               </div>
             </div>
           ))
