@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
 import "./product-category.styles.css";
 
 function ProductCategory({ category }) {
@@ -10,7 +12,7 @@ function ProductCategory({ category }) {
           className="background-image"
           style={{ backgroundImage: `url(${brandImage})` }}
         ></div>
-        <Link to="/productDetails" className="body">
+        <Link to={`/productDetails/${brandName}`} className="body">
           <h1>{brandName}</h1>
           <p>Shop Now</p>
         </Link>
@@ -18,5 +20,12 @@ function ProductCategory({ category }) {
     </>
   );
 }
+
+ProductCategory.propTypes = {
+  category: PropTypes.shape({
+    brandName: PropTypes.string.isRequired,
+    brandImage: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default ProductCategory;
