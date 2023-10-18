@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
+import ProductCategory from "../../components/ProductCategory/ProductCategory";
 
 function Home() {
+  const loadedCategories = useLoaderData();
+
   return (
     <>
       <div className="mt-5 mb-10 relative flex justify-center">
@@ -11,6 +14,21 @@ function Home() {
         >
           Search for our products
         </Link>
+      </div>
+      <div
+        className=" text-3xl font-extrabold text-center py-4 mb-5"
+        style={{
+          backgroundImage: `url(/background1.png)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        Products by Categories
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-2 px-4">
+        {loadedCategories.map((category) => (
+          <ProductCategory key={category._id} category={category} />
+        ))}
       </div>
     </>
   );
