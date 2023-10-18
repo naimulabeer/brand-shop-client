@@ -25,7 +25,7 @@ function Home() {
       >
         Products by Categories
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-2 px-4">
+      <div className="flex flex-wrap justify-between">
         {loadedCategories.map((category) => (
           <ProductCategory key={category._id} category={category} />
         ))}

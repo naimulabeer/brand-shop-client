@@ -1,14 +1,19 @@
+import { Link } from "react-router-dom";
+import "./product-category.styles.css";
+
 function ProductCategory({ category }) {
   const { brandName, brandImage } = category;
   return (
     <>
-      <div className="card card-side bg-base-100 shadow-xl w-1/2">
-        <figure className="w-full h-full">
-          <img src={brandImage} alt="brandimage" />
-        </figure>
-        <div className="flex justify-between w-full pr-4">
+      <div className="item-container">
+        <div
+          className="background-image"
+          style={{ backgroundImage: `url(${brandImage})` }}
+        ></div>
+        <Link to="/productDetails" className="body">
           <h1>{brandName}</h1>
-        </div>
+          <p>Shop Now</p>
+        </Link>
       </div>
     </>
   );

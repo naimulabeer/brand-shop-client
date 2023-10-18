@@ -48,7 +48,7 @@ const AddProduct = () => {
         }
       });
 
-    formRef.current.reset(); // Reset the form to clear data
+    formRef.current.reset();
   };
 
   const handleRatingChange = (event) => {
