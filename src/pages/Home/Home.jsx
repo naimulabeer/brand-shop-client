@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import ProductCategory from "../../components/ProductCategory/ProductCategory";
 import Membership from "../../components/Membership/Membership";
+import Blog from "../../components/Blog/Blog";
 
 function Home() {
   const loadedCategories = useLoaderData();
@@ -32,6 +33,7 @@ function Home() {
         ))}
       </div>
       <Membership />
+      <Blog />
     </>
   );
 }

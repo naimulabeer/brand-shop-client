@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Membership = () => {
   return (
     <div
-      className="mt-10"
+      className="mt-10 mb-10"
       style={{ position: "relative", textAlign: "center" }}
     >
       <img src="/member1.jpg" alt="Member" style={{ margin: "0 auto" }} />
@@ -31,14 +33,15 @@ const Membership = () => {
         >
           Its better as a member
         </h1>
-        <button
+        <Link
+          to="/signup"
           className="bg-slate-800 text-white text-base md:text-lg py-2 px-3 md:py-2 md:px-4 rounded-lg"
           style={{
             marginTop: "10px",
           }}
         >
           Sign Up
-        </button>
+        </Link>
       </div>
     </div>
   );
