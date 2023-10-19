@@ -52,7 +52,9 @@ function Navbar() {
           </div>
           <Link to="/" className=" items-center flex">
             <img className="w-12 md:w-20" src="/logo.png" alt="logo" />
-            <h1 className="hidden lg:block lg:text-sm">Craft Clothing</h1>
+            <h1 className="hidden lg:block lg:text-sm italic font-bold">
+              Craft Clothing
+            </h1>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -85,7 +87,7 @@ function Navbar() {
                 Log in
               </NavLink>
               <NavLink
-                className="bg-teal-500 px-4 py-2 text-white hover:bg-teal-700 hover:text-slate-200"
+                className=" bg-zinc-800 px-4 py-2 text-white hover:bg-zinc-500 hover:text-slate-200"
                 to="/signup"
               >
                 Sign up

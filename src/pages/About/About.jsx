@@ -32,7 +32,7 @@ function About() {
           <p className="text-gray-600">
             At Craft Clothing, we believe in challenging the ordinary and
             embracing creativity. Our attitude is rooted in innovation and the
-            relentless pursuit of unique designs. We're committed to delivering
+            relentless pursuit of unique designs. We are committed to delivering
             fashion that tells a story and reflects your personality.
           </p>
         </div>
