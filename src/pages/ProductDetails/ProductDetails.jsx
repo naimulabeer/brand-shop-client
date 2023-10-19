@@ -18,8 +18,6 @@ function ProductDetails() {
       rating,
     };
 
-    console.log(cart);
-
     // Send a POST request to the /cart route with the product data
     fetch("http://localhost:5000/cart", {
       method: "POST",

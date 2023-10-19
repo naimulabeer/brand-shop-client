@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import CartItems from "../../components/CartItems/CartItems";
 import "./cart.styles.css";
+import { ToastContainer } from "react-toastify";
 
 function Cart() {
   const cartProducts = useLoaderData();
+  const [carts, setCarts] = useState(cartProducts);
   return (
     <div className="cart-container">
+      <ToastContainer />
       <div className="cart-header">
         <div className="header-block">
           <span>Products</span>
@@ -23,9 +27,20 @@ function Cart() {
           <span>Remove</span>
         </div>
       </div>
-      {cartProducts.map((cart) => {
-        return <CartItems key={cart._id} cart={cart} />;
-      })}
+      {carts.length === 0 ? (
+        <div className="empty-cart-message">No Products in your cart.</div>
+      ) : (
+        carts.map((cart) => {
+          return (
+            <CartItems
+              key={cart._id}
+              cart={cart}
+              carts={carts}
+              setCarts={setCarts}
+            />
+          );
+        })
+      )}
     </div>
   );
 }

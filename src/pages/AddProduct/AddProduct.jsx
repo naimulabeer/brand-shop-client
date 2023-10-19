@@ -29,8 +29,6 @@ const AddProduct = () => {
       rating: rating,
     };
 
-    console.log(newProduct);
-
     fetch("http://localhost:5000/product", {
       method: "POST",
       headers: {
