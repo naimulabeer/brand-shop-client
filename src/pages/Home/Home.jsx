@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import ProductCategory from "../../components/ProductCategory/ProductCategory";
+import Membership from "../../components/Membership/Membership";
 
 function Home() {
   const loadedCategories = useLoaderData();
@@ -30,6 +31,7 @@ function Home() {
           <ProductCategory key={category._id} category={category} />
         ))}
       </div>
+      <Membership />
     </>
   );
 }
