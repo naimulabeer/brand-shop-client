@@ -12,7 +12,7 @@ function ProductCategory({ category }) {
           className="background-image"
           style={{ backgroundImage: `url(${brandImage})` }}
         ></div>
-        <Link to={`/productDetails/${brandName}`} className="body">
+        <Link to={`/productPage/${brandName}`} className="body">
           <h1>{brandName}</h1>
           <p>Shop Now</p>
         </Link>
