@@ -10,7 +10,7 @@ Craft Clothing is built using modern web technologies to provide a seamless and 
 
 ## Live Link
 
-- https://clothing-craft.web.app(https://clothing-craft.web.app)
+https://clothing-craft.web.app
 
 ### Key Features
 
