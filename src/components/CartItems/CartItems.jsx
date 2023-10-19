@@ -9,7 +9,7 @@ function CartItems({ cart, carts, setCarts }) {
 
   const handleRemove = (_id) => {
     fetch(
-      `https://brand-shop-server-4135lm0ii-naimulabeer.vercel.app/cart/${_id}`,
+      `https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/cart/${_id}`,
       {
         method: "DELETE",
       }
