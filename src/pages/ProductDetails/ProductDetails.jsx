@@ -8,7 +8,6 @@ function ProductDetails() {
   const { image, name, type, price, description, rating } = product;
 
   const handleCart = () => {
-    // Define the product data to be added to the cart
     const cart = {
       name,
       image,
@@ -18,7 +17,6 @@ function ProductDetails() {
       rating,
     };
 
-    // Send a POST request to the /cart route with the product data
     fetch("https://brand-shop-server-4135lm0ii-naimulabeer.vercel.app/cart", {
       method: "POST",
       headers: {
