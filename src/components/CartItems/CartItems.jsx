@@ -8,9 +8,12 @@ function CartItems({ cart, carts, setCarts }) {
   const { _id, name, image, type, price } = cart;
 
   const handleRemove = (_id) => {
-    fetch(`http://localhost:5000/cart/${_id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://brand-shop-server-4135lm0ii-naimulabeer.vercel.app/cart/${_id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.deletedCount > 0) {

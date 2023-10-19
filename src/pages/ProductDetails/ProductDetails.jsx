@@ -19,7 +19,7 @@ function ProductDetails() {
     };
 
     // Send a POST request to the /cart route with the product data
-    fetch("http://localhost:5000/cart", {
+    fetch("https://brand-shop-server-4135lm0ii-naimulabeer.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
