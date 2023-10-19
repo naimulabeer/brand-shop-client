@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjyK6clz1skSd38TcrORbPcy9-BbKvRqw",
-  authDomain: "clothing-craft.firebaseapp.com",
-  projectId: "clothing-craft",
-  storageBucket: "clothing-craft.appspot.com",
-  messagingSenderId: "298485316288",
-  appId: "1:298485316288:web:56533b2d9d27de6fb78b25",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
