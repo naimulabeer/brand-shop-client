@@ -39,7 +39,7 @@ function Blog() {
       <div className="text-center relative bottom-4 lg:right-10">
         <Link
           to="/about"
-          className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700"
+          className=" bg-blue-950 text-white py-2 px-4 rounded-full hover:bg-blue-300"
         >
           Learn about us
         </Link>
