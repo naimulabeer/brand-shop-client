@@ -28,7 +28,7 @@ function UpdateProduct() {
     };
 
     fetch(
-      `https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/product/${_id}`,
+      `https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/product/${_id}`,
       {
         method: "PUT",
         headers: {

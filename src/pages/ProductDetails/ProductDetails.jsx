@@ -17,7 +17,7 @@ function ProductDetails() {
       rating,
     };
 
-    fetch("https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/cart", {
+    fetch("https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

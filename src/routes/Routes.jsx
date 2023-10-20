@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: () =>
           fetch(
-            "https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/category"
+            "https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/category"
           ),
       },
       {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <ProductPage />,
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/product/${params.brandName}`
+            `https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/product/${params.brandName}`
           ),
       },
       {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/product/${params.brandName}/${params.id}`
+            `https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/product/${params.brandName}/${params.id}`
           ),
       },
       {
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/product/${params.brandName}/${params.id}`
+            `https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/product/${params.brandName}/${params.id}`
           ),
       },
       {
@@ -75,7 +75,7 @@ const router = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            "https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/cart"
+            "https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/cart"
           ),
       },
       {

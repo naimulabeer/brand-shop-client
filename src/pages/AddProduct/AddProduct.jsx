@@ -30,7 +30,7 @@ const AddProduct = () => {
     };
 
     fetch(
-      "https://brand-shop-server-fk7rbslch-naimulabeer.vercel.app/product",
+      "https://brand-shop-server-od9avun5v-naimulabeer.vercel.app/product",
       {
         method: "POST",
         headers: {
