@@ -2,14 +2,17 @@ import { Link, useLoaderData } from "react-router-dom";
 import ProductCategory from "../../components/ProductCategory/ProductCategory";
 import Membership from "../../components/Membership/Membership";
 import Blog from "../../components/Blog/Blog";
+import DarkMode from "../../components/DarkMode/DarkMode";
 
 function Home() {
   const loadedCategories = useLoaderData();
 
   return (
     <>
+      <DarkMode />
       <div className="mt-5 mb-10 relative flex justify-center">
         <img className=" lg:w-[800px]" src="/banner.jpg" alt="Clothbanner" />
+
         <Link
           to="/"
           className="absolute bottom-4 text-white rounded-lg border-1 px-3 py-2 bg-slate-800"
